@@ -1,2 +1,44 @@
-h1 {
-  color: red; }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 1280px;
+  margin: auto; }
+
+#header {
+  background: #333; }
+  #header #main-nav {
+    display: flex;
+    justify-content: space-between; }
+    #header #main-nav .logo {
+      display: flex;
+      align-items: center;
+      text-align: center; }
+      #header #main-nav .logo img {
+        height: 3rem;
+        width: auto; }
+      #header #main-nav .logo h1 {
+        color: #f4f4f4; }
+    #header #main-nav ul {
+      display: flex;
+      align-items: center; }
+      #header #main-nav ul li {
+        padding: 1rem 1.2rem; }
+        #header #main-nav ul li a {
+          color: #f4f4f4; }
