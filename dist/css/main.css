@@ -71,7 +71,7 @@ img {
   position: relative;
   z-index: 1; }
   .showcase::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -87,6 +87,8 @@ img {
     align-items: center;
     align-content: center;
     height: 100vh; }
+    .showcase-content h2 {
+      font-size: 2rem; }
     .showcase-content p {
       margin: 2rem 0; }
 
@@ -100,3 +102,26 @@ img {
     gap: 1rem 5rem; }
     .artists-content h2 {
       grid-column: 1 / span 3; }
+
+.gallery {
+  background: #333; }
+  .gallery-content {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: .4rem;
+    text-align: center; }
+  .gallery h2 {
+    grid-column: 1 / span 4;
+    color: #f4f4f4; }
+  .gallery img {
+    border-radius: .4rem;
+    scale: 0.95;
+    transition: all 400ms;
+    border: solid 2px #fff;
+    cursor: pointer; }
+    .gallery img:hover {
+      scale: 1;
+      background: grayscale(50%); }
+  .gallery-wrap {
+    background: #595959;
+    padding: 1.2rem; }

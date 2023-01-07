@@ -85,7 +85,7 @@ img {
     z-index: 1;
 
     &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -103,6 +103,10 @@ img {
         align-items: center;
         align-content: center;
         height: 100vh;
+
+        h2 {
+            font-size: 2rem;
+        }
 
         p {
             margin: 2rem 0;
@@ -124,5 +128,39 @@ img {
         h2 {
             grid-column: 1 / span 3;
         }
+    }
+}
+
+.gallery {
+    background: $dark-color;
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: .4rem;
+        text-align: center;
+    }
+
+    h2 {
+        grid-column: 1 / span 4;
+        color: $light-color;
+    }
+
+    img {
+        border-radius: .4rem;
+        scale: 0.95;
+        transition: all 400ms;
+        border: solid 2px #fff;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1;
+            background: grayscale(50%);
+        }
+    }
+
+    &-wrap {
+        background: $medium-color;
+        padding: 1.2rem;
     }
 }
