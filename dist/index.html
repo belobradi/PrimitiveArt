@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/9b7e8bf2d8.js" crossorigin="anonymous"></script>
     <title>Primitive Art | Tattoo</title>
 </head>
 <body>
@@ -16,29 +17,28 @@
                     <h1>Primitive Art</h1>
                 </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Artists</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="showcase">
+        <section id="home" class="showcase">
             <div class="container">
                 <div class="showcase-content">
                     <h2>Primitive art, with a complex twist</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fuga temporibus a nesciunt optio quibusdam laborum odio quam dignissimos omnis.</p>
-                    <a class="btn-transparent" href="#">Request Appointment</a>
+                    <a class="btn-transparent" href="#contact">Request Appointment</a>
                 </div>
             </div>
         </section>
-        <section class="artists">
+        <section id="artists" class="artists">
             <div class="container">
                 <div class="artists-content">
-                    <h2>ARTISTS</h2>
+                    <h2>Artists</h2>
                     <div>
                         <img src="/dist/img/artists/person1.png" alt="">
                         <h3>Goran</h3>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="container">
                 <div class="gallery-wrap">
                     <div class="gallery-content">
@@ -78,6 +78,46 @@
                 </div>
             </div>
         </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Let's connect!</h2>
+                    <p>Make an appointment and visit us at the location afterwards.</p>
+                    <div class="contact-content-grid">
+                        <div>
+                            <i class="fas fa-mobile-screen fa-2x"></i>
+                            <p>Call us at</p>
+                            <p>+381 63 7219966</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-location-dot fa-2x"></i>
+                            <p>Nemanjina 12</p>
+                            <p>23000, Zrenjanin</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <p>Email us at</p>
+                            <p>primitiveart.rs@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="map-content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1178.2499932088629!2d20.395109916722145!3d45.381776194869865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2408c9f569f94150!2sPrimitive%20Art%20Tattoo!5e0!3m2!1sen!2srs!4v1673184448975!5m2!1sen!2srs" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="socials">
+                        <h2>Follow us on</h2>
+                        <a href="https://www.facebook.com/primitive.art" target="_blank"><i class="main-hover pxy-10 fa-brands fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/primitiveart_zrenjanin/" target="_blank"><i class="main-hover pxy-10 fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <p class="copyright">Created by <a class="main-hover" href="https://nemanya.rs" target="_blank">nemanya.rs</a> &copy; 2023</p>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

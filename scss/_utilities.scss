@@ -9,5 +9,16 @@
 .btn {
     &-transparent {
         @extend %btn-shared;
+
+        &:hover {
+            color: $main-color;
+            border: 2px solid $main-color;
+        }
     }
 }
+
+.main-hover:hover {
+    color: $main-color;
+}
+
+.pxy-10 {padding: 10px;}

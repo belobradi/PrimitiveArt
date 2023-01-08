@@ -1,9 +1,13 @@
 $website-width: 1280px;
 $main-color: #ffbc00;
-$light-color: #f4f4f4;
-$medium-color: #595959;
-$dark-color: #333;
+// $light-color: #f4f4f4;
+$light-color: #e4e6eb;
+// $med-color: #595959;
+$dark-color-lighter: #242526;
+// $dark-color: #333;
+$dark-color: #18191a;
 $bg-image: url('../img/showcase.jpg');
+$img-d4: url(../img/d4.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
 
 @function set-text-color($color) {
     @if (lightness($color) > 50%) {
