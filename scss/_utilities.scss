@@ -15,6 +15,16 @@
             border: 2px solid $main-color;
         }
     }
+
+    &-dark {
+        @extend %btn-shared;
+        background: $dark-color;
+        color: aqua;
+        &-round {
+            border-radius: 10px;
+        }
+
+    }
 }
 
 .main-hover:hover {

@@ -125,6 +125,27 @@ img {
         text-align: center;
         gap: 1rem 5rem;
 
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            .image {
+                display: block;
+            }
+            .overlay {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 0;
+                background: $main-color;
+                padding: 5px;
+                transition: 500ms ease;
+            }
+            &:hover .overlay {
+                height: 40%;
+            }
+        }
+
         h2 {
             grid-column: 1 / span 3;
         }
