@@ -139,7 +139,14 @@ img {
                 height: 0;
                 background: $main-color;
                 padding: 5px;
-                transition: 500ms ease;
+                transition: all 500ms ease;
+
+                h3 {
+                    font-size: 25px;
+                }
+                p {
+                    margin-bottom: 5px;
+                }
             }
             &:hover .overlay {
                 height: 40%;

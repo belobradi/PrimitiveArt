@@ -1,12 +1,12 @@
 %btn-shared {
     display: inline-block;
     border: 2px solid $light-color;
-    padding: .8rem 1rem;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .btn {
+
     &-transparent {
         @extend %btn-shared;
 
@@ -19,12 +19,15 @@
     &-dark {
         @extend %btn-shared;
         background: $dark-color;
-        color: aqua;
+        // color: aqua;
         &-round {
             border-radius: 10px;
         }
-
     }
+    
+    &-small  {padding: .4rem .6rem}
+    &-medium {padding: .6rem .8rem}
+    &-big    {padding: .8rem 1rem}
 }
 
 .main-hover:hover {

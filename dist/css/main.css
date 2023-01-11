@@ -1,7 +1,6 @@
 .btn-transparent, .btn-dark {
   display: inline-block;
   border: 2px solid #e4e6eb;
-  padding: .8rem 1rem;
   text-transform: uppercase;
   cursor: pointer; }
 
@@ -10,10 +9,18 @@
   border: 2px solid #ffbc00; }
 
 .btn-dark {
-  background: #18191a;
-  color: aqua; }
+  background: #18191a; }
   .btn-dark-round {
     border-radius: 10px; }
+
+.btn-small {
+  padding: .4rem .6rem; }
+
+.btn-medium {
+  padding: .6rem .8rem; }
+
+.btn-big {
+  padding: .8rem 1rem; }
 
 .main-hover:hover {
   color: #ffbc00; }
@@ -129,7 +136,11 @@ img {
         height: 0;
         background: #ffbc00;
         padding: 5px;
-        transition: 500ms ease; }
+        transition: all 500ms ease; }
+        .artists-content .image-container .overlay h3 {
+          font-size: 25px; }
+        .artists-content .image-container .overlay p {
+          margin-bottom: 5px; }
       .artists-content .image-container:hover .overlay {
         height: 40%; }
     .artists-content h2 {
