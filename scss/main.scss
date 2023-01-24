@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'lightbox';
 
 * {
     box-sizing: border-box;
@@ -73,6 +74,9 @@ img {
             font-weight: bold;
             color: set-text-color($dark-color);
             padding: 1.2rem 1.6rem;
+            &:hover {
+                color: $main-color;
+            }
         }
     }
 }
