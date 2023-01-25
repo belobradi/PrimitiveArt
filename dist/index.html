@@ -71,18 +71,18 @@
                 <div class="gallery-wrap">
                     <div class="gallery-content">
                         <h2>Tattoo Gallery</h2>
-                        <img src="/dist/img/work/tattoo1.jpg" onclick="openModal();currentSlide(1)">
-                        <img src="/dist/img/work/tattoo2.jpg" onclick="openModal();currentSlide(2)">
-                        <img src="/dist/img/work/tattoo3.jpg" onclick="openModal();currentSlide(3)">
-                        <img src="/dist/img/work/tattoo4.jpg" onclick="openModal();currentSlide(4)">
-                        <img src="/dist/img/work/tattoo5.jpg" alt="">
-                        <img src="/dist/img/work/tattoo6.jpg" alt="">
-                        <img src="/dist/img/work/tattoo7.jpg" alt="">
-                        <img src="/dist/img/work/tattoo8.jpg" alt="">
-                        <img src="/dist/img/work/tattoo9.jpg" alt="">
-                        <img src="/dist/img/work/tattoo10.jpg" alt="">
-                        <img src="/dist/img/work/tattoo11.jpg" alt="">
-                        <img src="/dist/img/work/tattoo12.jpg" alt="">
+                        <img src="/dist/img/work/tattoo1.jpg">
+                        <img src="/dist/img/work/tattoo2.jpg">
+                        <img src="/dist/img/work/tattoo3.jpg">
+                        <img src="/dist/img/work/tattoo4.jpg">
+                        <img src="/dist/img/work/tattoo5.jpg">
+                        <img src="/dist/img/work/tattoo6.jpg">
+                        <img src="/dist/img/work/tattoo7.jpg">
+                        <img src="/dist/img/work/tattoo8.jpg">
+                        <img src="/dist/img/work/tattoo9.jpg">
+                        <img src="/dist/img/work/tattoo10.jpg">
+                        <img src="/dist/img/work/tattoo11.jpg">
+                        <img src="/dist/img/work/tattoo12.jpg">
                     </div>
                 </div>
             </div>
@@ -128,72 +128,28 @@
             </div>
         </footer>
     </main>
-    <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-      
-          <div class="mySlides">
-            <img src="/dist/img/work/tattoo1.jpg" style="height:100vh">
-          </div>
-      
-          <div class="mySlides">
-            <img src="/dist/img/work/tattoo2.jpg" style="height:100vh">
-          </div>
-      
-          <div class="mySlides">
-            <img src="/dist/img/work/tattoo3.jpg" style="height:100vh">
-          </div>
-          
-          <div class="mySlides">
-            <img src="/dist/img/work/tattoo4.jpg" style="height:100vh">
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-        </div>
-    </div>      
     <script>
-        function openModal() {
-          document.getElementById("myModal").style.display = "block";
-          document.getElementById("header").style.display = "none";
-        }
-        
-        function closeModal() {
-          document.getElementById("myModal").style.display = "none";
-        }
-        
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          var captionText = document.getElementById("caption");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          captionText.innerHTML = dots[slideIndex-1].alt;
-        }
+        const lightbox = document.createElement("div")
+        lightbox.id = 'lightbox'
+        document.body.appendChild(lightbox)
+
+        const images = document.querySelectorAll('img')
+        images.forEach(image => {
+        image.addEventListener('click', e => {
+            lightbox.classList.add('active')
+            const img = document.createElement('img')
+            img.src = image.src
+            while (lightbox.firstChild) {
+                lightbox.removeChild(lightbox.firstChild)
+            }
+            lightbox.appendChild(img)
+            })
+        })
+
+        lightbox.addEventListener('click', e => {
+            if (e.target !== e.currentTarget) return
+            lightbox.classList.remove('active')
+        })
     </script>
 </body>
 </html>
