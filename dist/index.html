@@ -40,7 +40,7 @@
                 <div class="artists-content">
                     <h2>Artists</h2>
                     <div class="image-container">
-                        <img src="/dist/img/artists/person1.png" alt="" class="image">
+                        <img src="img/artists/person1.png" alt="" class="image">
                         <div class="overlay">
                             <h3>Goran</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non dolorum ab rerum labore explicabo.</p>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="/dist/img/artists/person2.png" alt="" class="image">
+                        <img src="img/artists/person2.png" alt="" class="image">
                         <div class="overlay">
                             <h3>Mima</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non dolorum ab rerum labore explicabo.</p>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="/dist/img/artists/person3.png" alt="">
+                        <img src="img/artists/person3.png" alt="">
                         <div class="overlay">
                             <h3>Nikola</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias non dolorum ab rerum labore explicabo.</p>
@@ -71,18 +71,18 @@
                 <div class="gallery-wrap">
                     <div class="gallery-content">
                         <h2>Tattoo Gallery</h2>
-                        <img src="/dist/img/work/tattoo1.jpg">
-                        <img src="/dist/img/work/tattoo2.jpg">
-                        <img src="/dist/img/work/tattoo3.jpg">
-                        <img src="/dist/img/work/tattoo4.jpg">
-                        <img src="/dist/img/work/tattoo5.jpg">
-                        <img src="/dist/img/work/tattoo6.jpg">
-                        <img src="/dist/img/work/tattoo7.jpg">
-                        <img src="/dist/img/work/tattoo8.jpg">
-                        <img src="/dist/img/work/tattoo9.jpg">
-                        <img src="/dist/img/work/tattoo10.jpg">
-                        <img src="/dist/img/work/tattoo11.jpg">
-                        <img src="/dist/img/work/tattoo12.jpg">
+                        <img src="img/work/tattoo1.jpg">
+                        <img src="img/work/tattoo2.jpg">
+                        <img src="img/work/tattoo3.jpg">
+                        <img src="img/work/tattoo4.jpg">
+                        <img src="img/work/tattoo5.jpg">
+                        <img src="img/work/tattoo6.jpg">
+                        <img src="img/work/tattoo7.jpg">
+                        <img src="img/work/tattoo8.jpg">
+                        <img src="img/work/tattoo9.jpg">
+                        <img src="img/work/tattoo10.jpg">
+                        <img src="img/work/tattoo11.jpg">
+                        <img src="img/work/tattoo12.jpg">
                     </div>
                 </div>
             </div>
@@ -135,14 +135,14 @@
 
         const images = document.querySelectorAll('img')
         images.forEach(image => {
-        image.addEventListener('click', e => {
-            lightbox.classList.add('active')
-            const img = document.createElement('img')
-            img.src = image.src
-            while (lightbox.firstChild) {
-                lightbox.removeChild(lightbox.firstChild)
-            }
-            lightbox.appendChild(img)
+            image.addEventListener('click', e => {
+                lightbox.classList.add('active')
+                const img = document.createElement('img')
+                img.src = image.src
+                while (lightbox.firstChild) {
+                    lightbox.removeChild(lightbox.firstChild)
+                }
+                lightbox.appendChild(img)
             })
         })
 
