@@ -7,7 +7,7 @@ $dark-color-lighter: #242526;
 // $dark-color: #333;
 $dark-color: #18191a;
 $bg-image: url('../img/showcase.jpg');
-$img-d4: url(../img/d4.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+$img-d4: url('../img/d4.jpg') repeat scroll 0 0 rgba(0, 0, 0, 0);
 
 @function set-text-color($color) {
     @if (lightness($color) > 50%) {
@@ -15,4 +15,7 @@ $img-d4: url(../img/d4.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
     } @else {
         @return $light-color;
     }
+}
+html{
+    scroll-behavior: smooth;
 }
