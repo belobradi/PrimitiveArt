@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'lightbox';
+@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -86,6 +87,7 @@ img {
     filter: grayscale(60%);
     color: $light-color;
     position: relative;
+    text-align: center;
     z-index: 1;
 
     &::after {

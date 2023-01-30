@@ -28,8 +28,17 @@ html {
 .main-hover:hover {
   color: #ffbc00; }
 
-.pxy-10 {
+.pd-10 {
   padding: 10px; }
+
+.px-10 {
+  padding: 10px; }
+
+.px-20 {
+  padding: 20px; }
+
+.px-30 {
+  padding: 30px; }
 
 #lightbox {
   position: fixed;
@@ -115,6 +124,7 @@ img {
   filter: grayscale(60%);
   color: #e4e6eb;
   position: relative;
+  text-align: center;
   z-index: 1; }
   .showcase::after {
     content: '';
